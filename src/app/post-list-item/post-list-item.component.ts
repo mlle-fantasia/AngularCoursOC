@@ -14,8 +14,8 @@ export class PostListItemComponent implements OnInit {
   @Input() numberDontlike: number;
 
 
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -24,26 +24,26 @@ export class PostListItemComponent implements OnInit {
     return this.numberLike;
   }
 
-  getNumberDontlike(){
+  getNumberDontlike() {
     return this.numberDontlike;
   }
 
-  addLike(){
-    return this.numberLike ++;
+  addLike() {
+    return this.numberLike++;
   }
 
   addDontLike() {
     return this.numberDontlike++;
   }
 
-  getRapportLike(){
-    if (this.numberLike >= this.numberDontlike) {
-      return true;
-    }
-    else if (this.numberLike < this.numberDontlike) {
-      return false;
-    }
 
+  getRapportLike() {
+    const like = this.getNumberLike();
+    const dontLike = this.getNumberDontlike();
+    if (like === dontLike) {
+      return;
+    }
+    return (like > dontLike);
   }
 
 }

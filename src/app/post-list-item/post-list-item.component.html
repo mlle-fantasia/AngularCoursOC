@@ -1,6 +1,6 @@
 <li [ngClass]="{'list-group-item': true,
                 'list-group-item-success': getRapportLike(),
-                'list-group-item-danger': !getRapportLike() }">
+                'list-group-item-danger': false === getRapportLike() }">
   <h4>{{ title }}</h4>
   <p>{{ dateUpdate }}</p>
   <p>{{ content }}</p>
