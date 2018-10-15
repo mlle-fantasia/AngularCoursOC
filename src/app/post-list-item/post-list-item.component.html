@@ -1,0 +1,10 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': getRapportLike(),
+                'list-group-item-danger': !getRapportLike() }">
+  <h4>{{ title }}</h4>
+  <p>{{ dateUpdate }}</p>
+  <p>{{ content }}</p>
+  <p>nombre de like : {{ getNumberLike() }} -- nombre de don't like : {{ getNumberDontlike() }}</p>
+  <button class="btn btn-success" (click)="addLike()">I like</button>
+  <button class="btn btn-danger" (click)="addDontLike()">I don't like</button>
+</li>
