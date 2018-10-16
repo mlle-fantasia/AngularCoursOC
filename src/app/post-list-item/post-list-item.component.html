@@ -2,7 +2,7 @@
                 'list-group-item-success': getRapportLike(),
                 'list-group-item-danger': false === getRapportLike() }">
   <h4>{{ title }}</h4>
-  <p>{{ dateUpdate }}</p>
+  <p>{{ dateUpdate | date:'EEEEdMMMMy'}}</p>
   <p>{{ content }}</p>
   <p>nombre de like : {{ getNumberLike() }} -- nombre de don't like : {{ getNumberDontlike() }}</p>
   <button class="btn btn-success" (click)="addLike()">I like</button>

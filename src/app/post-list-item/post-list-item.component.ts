@@ -7,9 +7,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PostListItemComponent implements OnInit {
 
+  dateUpdate = new Date();
+
+
   @Input() title: string;
   @Input() content: string;
-  @Input() dateUpdate: string;
   @Input() numberLike: number;
   @Input() numberDontlike: number;
 
