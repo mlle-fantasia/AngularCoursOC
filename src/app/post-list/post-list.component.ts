@@ -12,22 +12,16 @@ export class PostListComponent implements OnInit {
       title: 'AngularJS vs Angular 2 et +',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna' +
         'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      numberLike: '0',
-      numberDontLike: '0'
     },
     {
       title: 'Premiers pas avec Angular',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ' +
         'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      numberLike: '0',
-      numberDontLike: '0'
     },
     {
       title: 'Angular c\'est génial',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ' +
         'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      numberLike: '0',
-      numberDontLike: '0'
     }
   ];
 

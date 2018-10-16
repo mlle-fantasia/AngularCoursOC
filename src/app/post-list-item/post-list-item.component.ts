@@ -8,12 +8,12 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PostListItemComponent implements OnInit {
 
   dateUpdate = new Date();
+  numberLike = 0;
+  numberDontlike = 0;
 
 
   @Input() title: string;
   @Input() content: string;
-  @Input() numberLike: number;
-  @Input() numberDontlike: number;
 
 
   constructor() {

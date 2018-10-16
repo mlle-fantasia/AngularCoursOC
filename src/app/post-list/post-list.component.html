@@ -2,8 +2,6 @@
   <h3>les derniers articles publiés</h3>
   <app-post-list-item *ngFor="let post of posts"
                       [title]="post.title"
-                      [content]="post.content"
-                      [numberLike]="post.numberLike"
-                      [numberDontlike]="post.numberDontLike">
+                      [content]="post.content">
   </app-post-list-item>
 </ul>
