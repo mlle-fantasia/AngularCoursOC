@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <h3>les derniers articles publiés</h3>
+  <app-post-list-item *ngFor="let post of tabPosts"
+                      [title]="post.title"
+                      [content]="post.content">
+  </app-post-list-item>
+</ul>
